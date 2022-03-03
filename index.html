@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home work</title>
+</head>
+<body>
+  <script src="/find-a-company.js"></script>
+  
+  <find-a-company
+    url="https://suggestions.dadata.ru/suggestions/api/4_1/rs/suggest/party"
+    token="07a0b1532f51afa3d5fba213dabd90f0bf18bea0"
+    ui-data-json='[
+      {
+        "label":"Компания или ИП"
+      },
+      {
+        "label":"Краткое наименование",
+        "fieldNames":["value"]
+      },
+      {
+        "label":"Полное наименование",
+        "fieldNames":["unrestricted_value"]
+      },
+      {
+        "label":"ИНН / КПП",
+        "fieldNames":["data.inn","data.kpp"]
+      },
+      {
+        "label":"Адрес",
+        "fieldNames":["data.address.value"]
+      }
+    ]'
+  >
+  </find-a-company>
+</body>
+</html>
